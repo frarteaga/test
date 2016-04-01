@@ -1,5 +1,15 @@
 """
 Return True if N is a prime number, False otherwise
+>>> prime(10)
+False
+>>> prime(2)
+True
+>>> prime(23)
+True
+>>> prime(31)
+True
+>>> prime(35)
+False
 """
 def prime(N):
 	if N == 1 or N == 0:
