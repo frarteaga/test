@@ -1,3 +1,6 @@
+"""
+Return True if N is a prime number, False otherwise
+"""
 def prime(N):
 	if N == 2:
 		return True
@@ -10,6 +13,14 @@ def prime(N):
 		i += 2
 	return True
 
-while 1:
-	N = input()
-	print prime(N)
+def main():
+	while 1:
+		N = 1
+		try:
+			N = input()
+		except IOError:
+			break
+		print prime(N)
+
+if __name__ == '__main__':
+	main()
