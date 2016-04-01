@@ -2,6 +2,8 @@
 Return True if N is a prime number, False otherwise
 """
 def prime(N):
+	if N == 1 or N == 0:
+		return False
 	if N == 2:
 		return True
 	if N % 2 == 0:
